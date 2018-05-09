@@ -7,7 +7,6 @@ resources:
     branch: my-work
     private_key: {{github-private-key}}
 
-
 - name: version
   type: semver
   source:
