@@ -9,7 +9,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class AllocationsAppTest {
 
-    @Ignore
     @Test
     public void embedded() {
         App.main(new String[]{});
