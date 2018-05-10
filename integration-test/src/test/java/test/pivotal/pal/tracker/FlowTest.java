@@ -6,6 +6,7 @@ import com.jayway.jsonpath.PathNotFoundException;
 import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import test.pivotal.pal.tracker.support.ApplicationServer;
 import test.pivotal.pal.tracker.support.HttpClient;
@@ -53,7 +54,7 @@ public class FlowTest {
         }
     }
 
-
+    @Ignore
     @Before
     public void setup() throws Exception {
         registrationServer.startWithDatabaseName("tracker_registration_test");
@@ -63,7 +64,7 @@ public class FlowTest {
         ApplicationServer.waitOnPorts("8881", "8882", "8883", "8884");
         TestScenarioSupport.clearAllDatabases();
     }
-
+    @Ignore
     @After
     public void tearDown() {
         registrationServer.stop();
@@ -72,6 +73,7 @@ public class FlowTest {
         timesheetsServer.stop();
     }
 
+    @Ignore
     @Test
     public void testBasicFlow() throws Exception {
         HttpClient.Response response;
