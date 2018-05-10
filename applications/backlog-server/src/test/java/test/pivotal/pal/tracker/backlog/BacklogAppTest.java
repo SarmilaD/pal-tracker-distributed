@@ -1,13 +1,14 @@
 package test.pivotal.pal.tracker.backlog;
 
 import io.pivotal.pal.tracker.backlog.App;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.web.client.RestTemplate;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class BacklogAppTest {
-
+    @Ignore
     @Test
     public void embedded() {
         App.main(new String[]{});
